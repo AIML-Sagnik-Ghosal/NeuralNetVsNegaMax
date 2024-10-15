@@ -128,7 +128,7 @@ print('R2 score is :', r2_score(y_test,y_pred),'rmse score is :',root_mean_squar
 print('R2 score is :', r2_score(scaler.inverse_transform(y_train),y_tpred),'rmse score is :',root_mean_squared_error(scaler.inverse_transform(y_train),y_tpred)
       ,'mape score is :',mean_absolute_percentage_error(scaler.inverse_transform(y_train),y_tpred))
 model_json = model.to_json()
-with open("model1.json", "w") as json_file:
+with open("model.json", "w") as json_file:
     json_file.write(model_json)
 bivec=[]
 for i in range(n,2*n):
